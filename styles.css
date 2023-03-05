@@ -1,0 +1,148 @@
+html {
+  font-family: "League Spartan", sans-serif;
+  background-image: url(bg-pattern-top-desktop.png),
+    url(bg-pattern-bottom-desktop.png);
+  background-position: top left, bottom right;
+  background-repeat: no-repeat;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: 2.5em auto;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.one {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-bottom: 3.75em;
+}
+
+.two {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: space-around;
+  padding: 0 3.125em 4.375em;
+}
+
+.inside {
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+  padding: 1.25em;
+}
+
+.outside {
+  padding-left: 2.5em;
+  padding-top: 1.25em;
+}
+
+.magenta {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(300, 43%, 22%);
+  width: 25%;
+  padding: 1.875em;
+  border-radius: 0.625em;
+  color: white;
+  line-height: 1.5em;
+  font-size: 1rem;
+}
+
+.magenta p {
+  color: white;
+  margin: 0;
+  font-weight: 400;
+}
+
+.magenta h2 {
+  color: hsl(333, 80%, 67%);
+  margin: 0 3px 2.5em 0;
+  font-size: 1rem;
+}
+
+.magenta img {
+  border-radius: 50%;
+  width: 70%;
+}
+
+li {
+  display: inline-flex;
+  text-decoration: none;
+  background-color: hsl(300, 24%, 96%);
+  color: hsl(300, 43%, 22%);
+  font-weight: 900;
+  border-radius: 0.625em;
+}
+
+@media (max-width: 400px) {
+  html {
+    background-image: url(bg-pattern-top-desktop.png),
+      url(bg-pattern-bottom-desktop.png);
+    background-position: top left, bottom right;
+    background-repeat: no-repeat;
+  }
+  .top {
+    flex-direction: column;
+  }
+  .one {
+    width: 90%;
+    text-align: center;
+    margin-bottom: 1.25em;
+    margin-left: 3.4375em;
+  }
+  .one h1 {
+    display: flex;
+    font-size: 2rem !important;
+    margin-bottom: 1.25em;
+  }
+  .two {
+    width: 100%;
+    padding: 0;
+  }
+  li {
+    flex-direction: column;
+    width: 90%;
+    margin: 0.625em;
+    align-items: center;
+  }
+  .inside {
+    justify-content: space-around;
+    width: 40%;
+    padding-bottom: 0;
+  }
+  .outside {
+    justify-content: center;
+    width: 90%;
+  }
+  .dos {
+    align-self: flex-start !important;
+  }
+  .tres {
+    align-self: flex-start !important;
+    margin-bottom: 3.125em;
+  }
+  .bottom {
+    flex-direction: column;
+  }
+  .magenta {
+    width: 90%;
+  }
+}
